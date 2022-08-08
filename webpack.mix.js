@@ -11,13 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/site.js', 'public/js')
+mix.sass('resources/scss/styles.scss', 'public/css')
 
-mix.postCss('resources/css/tailwind.css', 'public/css', [
-    require('postcss-import'),
-    require('tailwindcss/nesting'),
-    require('tailwindcss'),
-])
+mix.copyDirectory('resources/images', 'public/images')
 
 if (mix.inProduction()) {
    mix.version();
