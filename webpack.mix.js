@@ -11,6 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.js('resources/js/scroll-to-top.js', 'public/js')
+    .js('resources/js/topnav.js', 'public/js')
+    .js('resources/js/search.js', 'public/js')
+
 mix.sass('resources/scss/styles.scss', 'public/css')
 
 mix.copyDirectory('resources/images', 'public/images')
