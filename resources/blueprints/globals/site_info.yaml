@@ -1,0 +1,120 @@
+sections:
+  project:
+    display: Project
+    fields:
+      -
+        handle: sitename
+        field:
+          input_type: text
+          antlers: false
+          display: siteName
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: author
+        field:
+          input_type: text
+          antlers: false
+          display: author
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: description
+        field:
+          input_type: text
+          antlers: false
+          display: description
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: url
+        field:
+          input_type: text
+          antlers: false
+          display: URL
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: location
+        field:
+          input_type: text
+          antlers: false
+          display: location
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  app_ids:
+    display: 'App IDs'
+    fields:
+      -
+        handle: googleanalytics
+        field:
+          input_type: text
+          antlers: false
+          display: googleAnalytics
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  social:
+    display: Social
+    fields:
+      -
+        handle: twitter
+        field:
+          input_type: text
+          antlers: false
+          display: twitter
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: instagram
+        field:
+          input_type: text
+          antlers: false
+          display: instagram
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: telegram
+        field:
+          input_type: text
+          antlers: false
+          display: telegram
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: linkedin
+        field:
+          input_type: text
+          antlers: false
+          display: linkedin
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
