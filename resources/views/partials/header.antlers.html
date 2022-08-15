@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand navbar-dark">
+    <div class="container-xxl flex-wrap">
+        <a class="navbar-brand" href="/">
+            <img src="/images/vm-logo-22-2b.svg" alt="{{ site_info:sitename }}"/>
+            <img class="on-hover" src="/images/vm-logo-22-2.svg" alt="{{ site_info:sitename }}"/>
+        </a>
+        <ul class="navbar-nav ms-auto">
+            {{ nav:header }}
+                <li class="nav-item {{ is_current ? 'active' : '' }} {{ if title === 'Home' }} d-none d-sm-block {{ /if }} ms-0 ms-sm-5">
+                    <a class="nav-link" href="{{ url }}">{{ title }}</a>
+                </li>
+            {{ /nav:header }}
+        </ul>
+    </div>
+</nav>

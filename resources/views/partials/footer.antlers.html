@@ -1,0 +1,45 @@
+<div class="content">
+  <footer class="footer">
+    <div class="nav-cols">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <p class="heading">Content</p>
+            <ul>
+                {{ nav:footer }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                {{ /nav:footer }}
+            </ul>
+          </div>
+          <div class="col">
+            <p class="heading">Social</p>
+            <ul>
+              <li><a class="text-nowrap" href="{{ site_info:twitter }}">
+                  <ion-icon class="align-top" name="logo-twitter"></ion-icon> Twitter</a></li>
+              <li><a class="text-nowrap" href="{{ site_info:linkedin }}">
+                  <ion-icon class="align-top" name="logo-linkedin"></ion-icon> Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <p class="heading">Info</p>
+            <ul>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms Of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex align-items-end flex-column mt-2">
+            <div class="bottom-line"><a class="fun-link me-0 me-sm-5" href="//dev.tapirio.com"><img class="icon" src="/images/logo-tapirio.svg"/>
+                Built on <span>Tapirio</span>.</a><span class="line">Copyright &copy; {{ now format="Y" }} </span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="scroll-to-top fixed hidden"><img src="/images/icon-up.svg" alt="Scroll up"/></div>

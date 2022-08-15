@@ -1,0 +1,17 @@
+tree:
+  -
+    id: 5aa566ca-5918-4c72-9fba-d41aa95beca8
+    title: Blog
+    url: /blog
+  -
+    id: 8c2324dc-fa59-46be-acb5-739d74d1e8b0
+    title: Movies
+    url: /movies
+  -
+    id: e739594f-1ee2-4e03-a518-be94381099c3
+    title: Tags
+    url: /tags
+  -
+    id: c6f8f731-dd98-4eb5-8a68-3d6967a79811
+    title: 'About me'
+    url: /about
