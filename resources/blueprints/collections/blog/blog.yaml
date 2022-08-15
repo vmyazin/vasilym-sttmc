@@ -1,0 +1,135 @@
+title: Blog
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          antlers: false
+          display: Title
+          icon: text
+          listable: true
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: description
+        field:
+          input_type: text
+          antlers: false
+          display: Description
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: image
+        field:
+          mode: list
+          container: default
+          folder: public
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
+      -
+        handle: image_description
+        field:
+          input_type: text
+          antlers: false
+          display: 'Image description'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
+      -
+        handle: image_for_share
+        field:
+          mode: list
+          container: default
+          folder: share
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Image for share'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
+      -
+        handle: content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Content
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: created_date
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          create: true

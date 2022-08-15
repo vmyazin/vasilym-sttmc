@@ -1,0 +1,31 @@
+{{ partial:header }}
+
+<div class="container page">
+  <div class="row">
+    <div class="col">
+      <h2 class="mb-5">
+        <span class="badge badge-accent">Tag</span> {{ title }}
+      </h2>
+      <p>
+        <a href="/tags"> See all tags <i class="gg-chevron-right align-middle"></i>
+        </a>
+      </p>
+
+      {{ entries paginate="5" }}
+        <ul class="article-list list-unstyled plain-list">
+        {{ results }}
+          <li>
+            <a href="{{ url }}">
+                <h3>{{ title }}</h3>
+                <small class="text-nowrap meta">{{ created_date }}</small>
+            </a>
+          </li>
+        {{ /results }}
+        </ul>
+      {{ /entries }}
+
+    </div>
+  </div>
+</div>
+
+{{ partial:footer }}

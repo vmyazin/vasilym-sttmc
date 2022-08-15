@@ -1,0 +1,60 @@
+{{ partial:header }}
+
+<div class="container-fluid page-header">
+  <div class="row">
+    <div class="col">
+      <div class="text-center mt-4 mb-4">
+        <h2>Blog</h2>
+        <p class="meta mb-0">Vasily Myazin’s thoughts in written form are collected here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container page">
+    <div class="row">
+        <div class="col col-lg-6 offset-lg-3">
+            <ul class="article-list list-unstyled plain-list mb-5">
+                {{ collection:blog as="articles" paginate="10" }}
+
+                    {{ articles sort="published_date:desc" }}
+                        <li>
+                          <a class="d-flex" href="/blog/{{ slug }}">
+                            <section class="img-frame">
+                              <img class="img-fluid rounded" src="/images/blog/beach-relax.jpg" alt="I used to think that I was wasting time taking a break, a day-off, or even a short vacation. Turns out most of us should do it to stay sane and productive.">
+                            </section>
+                            <section class="ms-4">
+                              <small class="text-nowrap meta">{{ created_date }}</small>
+                              <h3>{{ title | widont }}</h3>
+                              <div class="tags-horizontal mt-2">
+                                {{ tags }}
+                                    <span class="tag tag-small">
+                                        {{ title }}
+                                    </span>
+                                {{ /tags }}
+                              </div>
+                            </section>
+                          </a>
+                        </li>
+                    {{ /articles }}
+
+                    {{ paginate }}
+                        {{ if prev_page || next_page }}
+                            <div class="flex justify-between text-xl -mx-16 pt-16 font-bold">
+                                <a href="{{ prev_page }}" class="{{ ! prev_page ?= 'opacity-25' }}">
+                                    &larr; Back to the future
+                                </a>
+                                <a href="{{ next_page }}">
+                                    Forward to the past &rarr;
+                                </a>
+                            </div>
+                        {{ /if }}
+                    {{ /paginate }}
+                {{ /collection:blog }}
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+{{ partial:footer }}
