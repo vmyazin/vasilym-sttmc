@@ -4,7 +4,8 @@ layout: layout
 taxonomies:
   - tags
 revisions: false
-sort_dir: asc
+route: 'blog/{slug}'
+sort_dir: desc
 date_behavior:
   past: public
   future: private

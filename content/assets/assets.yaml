@@ -1,2 +1,7 @@
-title: Assets
+title: Default
 disk: assets
+allow_uploads: true
+allow_downloading: true
+allow_renaming: true
+allow_moving: true
+create_folders: true

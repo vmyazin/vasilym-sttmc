@@ -1,0 +1,63 @@
+{{ partial:header }}
+
+<div class="container page">
+  <div class="blog-content">
+    <div class="row mt-0 pt-0 mt-md-5">
+      <div class="col col-md-2 nav-back">
+        <div class="link-wrapper font-light">
+          <a class="hidden-link" href="/blog/">
+            <ion-icon class="align-bottom md hydrated" name="arrow-back" role="img" aria-label="arrow back"></ion-icon>
+            <span>Posts</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="social-share-list-holder">
+          <ul class="social-share-list">
+            <li class="list-group-item">
+              <a href="https://twitter.com/intent/tweet?text={{title}}%20by%20Vasily%20Myazin%20{{ config:app:url }}{{url}}&amp;hashtags={{tags}}{{title}}{{ if !last }},{{ endif }}{{/tags}}" target="_blank">
+                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.facebook.com/sharer.php?u={{ config:app:url }}{{url}}" target="_blank">
+                <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://t.me/share/url?url={{ config:app:url }}{{url}}&amp;text={{title}}%20by%20Vasily%20Myazin" target="_blank">
+                <img class="social-icon" src="/images/social/logo-telegram.svg">
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ config:app:url }}{{url}}&amp;title={{title}}%20by%20Vasily%20Myazin&amp;source=Vasily%20Myazin" target="_blank">
+                <ion-icon name="logo-linkedIn" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="{{ image }}" alt="{{ image_description }}}">
+          <figcaption>{{image_description}}</figcaption>
+        </figure>
+        <h1 class="post-title mt-4">{{title}}</h1>
+        <p class="author">{{author}} {{ name }} {{/author}} <span class="separator">,</span> {{created_date}} </p>
+
+        {{content}}
+
+        <div class="pt-4 mb-5" role="tags">
+          <b>Tags: </b>&nbsp;
+          {{tags}}
+            <a class="tag" href="/tags/{{ slug }}">{{ title }}</a>
+          {{/tags}}
+        </div>
+
+        {{ partial:mailchimp }}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial:footer }}

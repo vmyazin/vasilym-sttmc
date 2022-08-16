@@ -4,8 +4,8 @@
   <div class="row">
     <div class="col">
       <div class="text-center mt-4 mb-4">
-        <h2>Blog</h2>
-        <p class="meta mb-0">Vasily Myazin’s thoughts in written form are collected here.</p>
+        <h2>{{title}}</h2>
+        <p class="meta mb-0">{{content}}</p>
       </div>
     </div>
   </div>
@@ -17,11 +17,11 @@
             <ul class="article-list list-unstyled plain-list mb-5">
                 {{ collection:blog as="articles" paginate="10" }}
 
-                    {{ articles sort="published_date:desc" }}
+                    {{ articles sort="created_date:desc" }}
                         <li>
                           <a class="d-flex" href="/blog/{{ slug }}">
                             <section class="img-frame">
-                              <img class="img-fluid rounded" src="/images/blog/beach-relax.jpg" alt="I used to think that I was wasting time taking a break, a day-off, or even a short vacation. Turns out most of us should do it to stay sane and productive.">
+                              <img class="img-fluid rounded" src="{{image}}" alt="{{image_description}}">
                             </section>
                             <section class="ms-4">
                               <small class="text-nowrap meta">{{ created_date }}</small>
