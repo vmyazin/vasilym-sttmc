@@ -1,0 +1,36 @@
+<div class="section blog-digest px-3">
+  <div class="max-layout-width">
+    <div class="container-fluid mb-5 pb-3">
+      <div class="row">
+        <div class="col">
+          <h4 class="mt-5 mb-4">
+            <a class="hidden-link" href="/blog">Read On The Blog <ion-icon class="align-middle ms-3 light-gray md hydrated" name="arrow-forward" role="img" aria-label="arrow forward"></ion-icon>
+            </a>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        {{ collection:blog as="articles" }}
+            {{ articles sort="created_date:desc" limit="3" }}
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="post-card mb-4 mb-md-0">
+                    <a href="/blog/{{ slug }}">
+                        <div class="card-img">
+                            <img src="{{image}}" alt="{{image_description}}">
+                        </div>
+                        <div class="card-caption">
+                            <h5 class="heading">{{ title }}</h5>
+                            <p>
+                                <small class="meta">{{ created_date }}</small>
+                            </p>
+                            <p>{{ description }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {{ /articles }}
+        {{ /collection:blog }}
+      </div>
+    </div>
+  </div>
+</div>

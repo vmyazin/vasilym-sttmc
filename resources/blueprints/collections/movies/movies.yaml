@@ -1,0 +1,74 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: year
+        field:
+          input_type: text
+          antlers: false
+          display: Date
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: director
+        field:
+          input_type: text
+          antlers: false
+          display: Director
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: image
+        field:
+          mode: list
+          container: assets
+          folder: films
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          max_files: 1
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - movies
+          max_items: 1
+          listable: false
+          localizable: true
+title: Movies
