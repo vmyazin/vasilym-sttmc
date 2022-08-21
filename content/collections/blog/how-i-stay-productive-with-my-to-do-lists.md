@@ -42,4 +42,4 @@ Having the habit of letting Siri know then and there ensures that I won’t forg
 
 Between these two methods of getting stuff done I address most of my personal and professional needs. Granted, there are more intricate and nuanced tools for collaborative work, like kanban boards and such, but for me these two stuck as most effective. I am not a fan of to-do apps for a computer or a smartphone, for some reason I don’t get the same level of satisfaction and I tend to forget about them over time.
 
-This is what works for me, how about you? Let me know on [Twitter @vasily_m](https://www.twitter.com/vasily_m).
+This is what works for me, how about you? Let me know on [Twitter @rapidsystemshub](https://www.twitter.com/rapidsystemshub).
