@@ -5,6 +5,7 @@ taxonomies:
   - tags
 revisions: false
 route: 'blog/{slug}'
+date: true
 sort_dir: desc
 date_behavior:
   past: public

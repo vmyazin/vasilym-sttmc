@@ -6,6 +6,7 @@ description: 'In a messy environment your thoughts tend to get stuck in the clog
 image: blog/kitchen-before-after.jpg
 image_description: 'Photo by Curtis Adams, collage by Vasily Myazin'
 seotamic_image: blog/kitchen-before-after.jpg
+date: '2020-10-08'
 created_date: '2020-10-08'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

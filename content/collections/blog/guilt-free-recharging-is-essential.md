@@ -7,6 +7,7 @@ image: blog/beach-relax.jpg
 image_description: 'Photo by Ruel Madelo, taken in Badian, Philippines'
 seotamic_image: blog/beach-relax.jpg
 published: true
+date: '2020-09-04'
 created_date: '2020-09-04'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

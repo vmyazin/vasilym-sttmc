@@ -7,6 +7,7 @@ image: blog/sand-castle.jpg
 image_description: 'Photo by Jaime Spaniol, taken in Armação dos Búzios, Brazil'
 seotamic_image: blog/sand-castle.jpg
 published: true
+date: '2020-09-14'
 created_date: '2020-09-14'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

@@ -7,6 +7,7 @@ image: blog/fitness-crunch.jpg
 image_description: 'Photo from iStockPhoto, doctored by Vasily Myazin'
 seotamic_image: blog/fitness-crunch-share.jpg
 created_date: '2021-01-01'
+date: '2021-01-01'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

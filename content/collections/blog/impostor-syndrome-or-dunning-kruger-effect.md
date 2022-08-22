@@ -7,6 +7,7 @@ image: blog/dunning-impostor.jpg
 image_description: 'Photos by Andrea Piacquadio and Nathan Cowley, found on Pexels'
 seotamic_image: blog/dunning-impostor-share.jpg
 created_date: '2020-11-17'
+date: '2020-11-17'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

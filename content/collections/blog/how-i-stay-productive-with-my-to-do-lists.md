@@ -6,6 +6,7 @@ description: 'In this post I share my ways to keep organized and get stuff done'
 image: blog/watch-postits.jpg
 seotamic_image: blog/watch-postits.jpg
 published: true
+date: '2020-08-15'
 created_date: '2020-08-15'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

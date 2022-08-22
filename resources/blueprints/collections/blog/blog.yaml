@@ -80,6 +80,23 @@ sections:
           type: slug
           localizable: true
       -
+        handle: date
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          latest_date: '2022-08-16'
+      -
         handle: created_date
         field:
           mode: single

@@ -7,6 +7,7 @@ image: blog/note-taking.jpg
 image_description: 'Photo by Judit Peter'
 seotamic_image: blog/note-taking.jpg
 published: true
+date: '2020-09-27'
 created_date: '2020-09-27'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

@@ -6,7 +6,8 @@ description: 'If you don’t have a game plan for the day, things will happen bu
 image: blog/morning-collage.jpg
 image_description: 'Collage by Vasily Myazin from multiple sources at Pexels.com'
 seotamic_image: blog/morning-collage.jpg
-created_date: '2020-10-28'
+created_date '2020-10-28'
+date: '2020-10-28'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

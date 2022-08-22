@@ -7,6 +7,7 @@ image: blog/nature-sleep.jpg
 image_description: 'Photo by pixabay.com'
 seotamic_image: blog/nature-sleep.jpg
 created_date: '2020-09-24'
+date: '2020-09-24'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

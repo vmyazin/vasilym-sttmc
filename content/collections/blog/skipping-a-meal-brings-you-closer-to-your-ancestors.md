@@ -6,6 +6,7 @@ description: 'I used to be extremely rigid with eating three meals a day, plus a
 image: blog/orangutan-hotdog.jpg
 seotamic_image: blog/orangutan-hotdog.jpg
 created_date: '2020-08-22'
+date: '2020-08-22'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

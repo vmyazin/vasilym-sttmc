@@ -7,6 +7,7 @@ image: blog/book-language-of-vasily.jpg
 image_description: 'Photo by Angie (angiegophoto.com)'
 seotamic_image: blog/book-language-of-vasily.jpg
 created_date: '2021-11-25'
+date: '2021-11-25'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

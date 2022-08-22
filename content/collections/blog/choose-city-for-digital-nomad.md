@@ -6,6 +6,7 @@ description: 'Key factors to considering which city to choose for an extended st
 image: blog/digital-nomad-city.jpg
 image_description: 'Photo by Michael Makarov and Patrick Hughes'
 seotamic_image: blog/digital-nomad-city-share.jpg
+date: '2022-07-13'
 created_date: '2022-07-13'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

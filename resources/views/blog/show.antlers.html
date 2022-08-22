@@ -42,7 +42,7 @@
           <figcaption>{{image_description}}</figcaption>
         </figure>
         <h1 class="post-title mt-4">{{title}}</h1>
-        <p class="author">{{author}} {{ name }} {{/author}} <span class="separator">,</span> {{created_date}} </p>
+        <p class="author">{{author}} {{ name }} {{/author}} <span class="separator">,</span> {{date}} </p>
 
         {{content}}
 
@@ -54,6 +54,33 @@
         </div>
 
         {{ partial:mailchimp }}
+
+        <div class="post-nav d-flex justify-content-between align-items-center pt-4 mt-4 mb-5">
+          <div>
+            {{ collection:previous in="blog" as="posts" limit="1" sort="date:asc" }}
+                {{ posts }}
+                    <a href="{{ url }}">
+                      <span class="direction prev">
+                        <i class="gg-arrow-left"></i>Previous </span>
+                      <br>
+                      <span class="title">{{ title }}</span>
+                    </a>
+                {{ /posts }}
+            {{ /collection:previous }}
+          </div>
+          <div class="text-end">
+            {{ collection:next in="blog" as="posts" limit="1" sort="date:asc" }}
+              {{ posts }}
+              <a href="{{ url }}">
+                <span class="direction next">
+                  Next <i class="gg-arrow-right"></i></span>
+                <br>
+                <span class="title">{{ title }}</span>
+              </a>
+              {{ /posts }}
+            {{ /collection:next }}
+          </div>
+        </div>
 
       </div>
     </div>

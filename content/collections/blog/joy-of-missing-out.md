@@ -7,6 +7,7 @@ image: blog/fomo-jomo.jpg
 image_description: 'Photo by Jack Cooney'
 seotamic_image: blog/fomo-jomo-share.jpg
 created_date: '2022-05-12'
+date: '2022-05-12'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
 tags:

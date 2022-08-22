@@ -7,6 +7,7 @@ description: 'Years ago I had an epiphany. I realized that I can connect perform
 image: blog/running-man.jpg
 image_description: 'Photo by Jenny Hill on Unsplash'
 seotamic_image: blog/running-man-share.jpg
+date: '2020-10-13'
 created_date: '2020-10-13'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43

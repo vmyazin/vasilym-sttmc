@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         {{ collection:blog as="articles" }}
-            {{ articles sort="created_date:desc" limit="3" }}
+            {{ articles sort="date:desc" limit="3" }}
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="post-card mb-4 mb-md-0">
                     <a href="/blog/{{ slug }}">
@@ -21,7 +21,7 @@
                         <div class="card-caption">
                             <h5 class="heading">{{ title }}</h5>
                             <p>
-                                <small class="meta">{{ created_date }}</small>
+                                <small class="meta">{{ date }}</small>
                             </p>
                             <p>{{ description }}</p>
                         </div>
