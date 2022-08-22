@@ -2,6 +2,7 @@
 /public/hot
 /public/storage
 /public/vendor/statamic
+/public/vendor/gitamic
 /storage/*.key
 /vendor
 .env
@@ -16,3 +17,4 @@ yarn-error.log
 .DS_Store
 /.idea
 /.vscode
+/users
