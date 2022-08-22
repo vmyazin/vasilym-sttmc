@@ -5,7 +5,7 @@ title: 'How Cleaning Your Place Creates A Remarkable Lasting Effect On Your Day 
 description: 'In a messy environment your thoughts tend to get stuck in the clogged pipes of your unfocused mind. In a clean environment clear thoughts start gathering: pointed, potent and unrestrained.'
 image: blog/kitchen-before-after.jpg
 image_description: 'Photo by Curtis Adams, collage by Vasily Myazin'
-image_for_share: blog/kitchen-before-after.jpg
+seotamic_image: blog/kitchen-before-after.jpg
 created_date: '2020-10-08'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660773089
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'In a messy environment your thoughts tend to get stuck in the clogged pipes of your unfocused mind. In a clean environment clear thoughts start gathering: pointed, potent and unrestrained.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'In a messy environment your thoughts tend to get stuck in the clogged pipes of your unfocused mind. In a clean environment clear thoughts start gathering: pointed, potent and unrestrained.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'In a messy environment your thoughts tend to get stuck in the clogged pipes of your unfocused mind. In a clean environment clear thoughts start gathering: pointed, potent and unrestrained.'
 ---
 **I’ve seen some nasty looking dwellings in my day. And I mean so messy and disorganized that it made wonder whether the person living there was depressed or distressed. More often than not, it’s a simple act of neglect whose effect rapidly accumulates over time. At that stage it seems futile to do anything about it and their brain just accepts it as a norm.**
 

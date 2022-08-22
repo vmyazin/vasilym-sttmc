@@ -5,7 +5,7 @@ title: 'How to Choose a Digital Nomad-Friendly City to Stay for a Month (Or Long
 description: 'Key factors to considering which city to choose for an extended stay as a remote worker (digital nomad)'
 image: blog/digital-nomad-city.jpg
 image_description: 'Photo by Michael Makarov and Patrick Hughes'
-image_for_share: blog/digital-nomad-city-share.jpg
+seotamic_image: blog/digital-nomad-city-share.jpg
 created_date: '2022-07-13'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660773129
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Key factors to considering which city to choose for an extended stay as a remote worker (digital nomad)'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Key factors to considering which city to choose for an extended stay as a remote worker (digital nomad)'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Key factors to considering which city to choose for an extended stay as a remote worker (digital nomad)'
 ---
 **If you do your work mostly on your laptop, don't need to go to the office and like to travel, this article is for you.**
 

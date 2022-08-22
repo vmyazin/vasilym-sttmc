@@ -5,7 +5,7 @@ title: 'Tricks To Working Out Without A Gym (+ Free Exercise List)'
 description: 'It’s not easy to maintain a workout routine when you don’t have stable access to a gym. There are good ways to keep your body in shape even during traveling and pandemics.'
 image: blog/fitness-crunch.jpg
 image_description: 'Photo from iStockPhoto, doctored by Vasily Myazin'
-image_for_share: blog/fitness-crunch-share.jpg
+seotamic_image: blog/fitness-crunch-share.jpg
 created_date: '2021-01-01'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772891
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'It’s not easy to maintain a workout routine when you don’t have stable access to a gym. There are good ways to keep your body in shape even during traveling and pandemics.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'It’s not easy to maintain a workout routine when you don’t have stable access to a gym. There are good ways to keep your body in shape even during traveling and pandemics.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'It’s not easy to maintain a workout routine when you don’t have stable access to a gym. There are good ways to keep your body in shape even during traveling and pandemics.'
 ---
 **Exercise. Regularly. Get vital benefits. I’m sure you already know that. You are also well aware of how unexpected events can easily disrupt your exercise routine. Even if you have a regular schedule and access to the gym. There is a number of events that can send you into a tailspin. Traveling to a different city or country takes away your habitual routine. Pandemics necessitate gym closures for indefinite periods. Mounting chores at home prevent you from walking (or jogging) to your gym that can be as near as several minutes away.**
 

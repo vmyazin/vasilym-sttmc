@@ -5,7 +5,7 @@ title: '8 Ways To Be On An Information Diet (For Better Mental Health)'
 description: 'Problem: too much information enters our minds. Solution: conscious limiting of information consumption and info-dieting.'
 image: blog/take-a-break.jpg
 image_description: 'Photo from iStockPhoto, doctored by Vasily Myazin'
-image_for_share: blog/take-a-break-share.jpg
+seotamic_image: blog/take-a-break-share.jpg
 created_date: '2021-02-11'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772994
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Problem: too much information enters our minds. Solution: conscious limiting of information consumption and info-dieting.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Problem: too much information enters our minds. Solution: conscious limiting of information consumption and info-dieting.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Problem: too much information enters our minds. Solution: conscious limiting of information consumption and info-dieting.'
 ---
 **It happens little by little, and suddenly you feel like you are completely consumed by the news, social media updates, sensational YouTube videos, links to tabloid websites — often shared with you by friends and family. The whirlwind of constant bits of information sucks you in and you don’t even notice its effect until you find yourself in the middle of it, fully buried.**
 

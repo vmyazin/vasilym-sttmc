@@ -5,7 +5,7 @@ title: 'How I Stop Worrying About Missing Out'
 description: 'The fear of missing out (FOMO) on pleasant sensations is a palpable source of anxiety for me. Hedonism developed through dopamine addiction needs to be treated with introspection. JOMO to the rescue!'
 image: blog/fomo-jomo.jpg
 image_description: 'Photo by Jack Cooney'
-image_for_share: blog/fomo-jomo-share.jpg
+seotamic_image: blog/fomo-jomo-share.jpg
 created_date: '2022-05-12'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -18,6 +18,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772975
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'The fear of missing out (FOMO) on pleasant sensations is a palpable source of anxiety for me. Hedonism developed through dopamine addiction needs to be treated with introspection. JOMO to the rescue!'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'The fear of missing out (FOMO) on pleasant sensations is a palpable source of anxiety for me. Hedonism developed through dopamine addiction needs to be treated with introspection. JOMO to the rescue!'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'The fear of missing out (FOMO) on pleasant sensations is a palpable source of anxiety for me. Hedonism developed through dopamine addiction needs to be treated with introspection. JOMO to the rescue!'
 ---
 **The fear of missing out (FOMO) on pleasant sensations is a palpable source of anxiety for me. Delicious food at a new restaurant, a day trip to a famous and gorgeous nature landmark, a date with someone I find attractive, or a free concert by a band I've enjoyed for years. These are just some examples of the things that require me to be somewhere, engage socially, expend energy, and spend time getting to and fro. It is difficult for me to resist acting on these types of sensory-satisfying experiences. My desire for a non-stop stream of enjoyment is a product of hedonism.**
 

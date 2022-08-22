@@ -5,7 +5,7 @@ title: 'How A Morning Ritual Brings Order To Your Day (+ Free Routine Template)'
 description: 'If you don’t have a game plan for the day, things will happen but you will be at the mercy of chance. When I finally tried an actual step-by-step morning sequence it was a true game changer.'
 image: blog/morning-collage.jpg
 image_description: 'Collage by Vasily Myazin from multiple sources at Pexels.com'
-image_for_share: blog/morning-collage.jpg
+seotamic_image: blog/morning-collage.jpg
 created_date: '2020-10-28'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -17,6 +17,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772945
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'If you don’t have a game plan for the day, things will happen but you will be at the mercy of chance. When I finally tried an actual step-by-step morning sequence it was a true game changer.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'If you don’t have a game plan for the day, things will happen but you will be at the mercy of chance. When I finally tried an actual step-by-step morning sequence it was a true game changer.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'If you don’t have a game plan for the day, things will happen but you will be at the mercy of chance. When I finally tried an actual step-by-step morning sequence it was a true game changer.'
 ---
 **The day starts slow. Lots to do. The head is foggy. Where to begin? I’ve been there and I’ve seen others struggle. Lazy beginning of the day, no direction, time wasted on figuring out what to eat, what to wear, no stretching, no hydration. As one of my mentors once said “Without the rituals, the day wins you over.” It is so true – the day will just stream-roll over you if you don’t have a plan.**
 

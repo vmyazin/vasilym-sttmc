@@ -5,7 +5,7 @@ title: 'Guilt-free Recharging Is Essential'
 description: 'I used to think that I was wasting time taking a break, a day-off, or even a short vacation. Turns out most of us should do it to stay sane and productive.'
 image: blog/beach-relax.jpg
 image_description: 'Photo by Ruel Madelo, taken in Badian, Philippines'
-image_for_share: blog/beach-relax.jpg
+seotamic_image: blog/beach-relax.jpg
 published: true
 created_date: '2020-09-04'
 author:
@@ -17,6 +17,17 @@ tags:
   - recharge
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660770773
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Photo by Ruel Madelo, taken in Badian, Philippines'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Photo by Ruel Madelo, taken in Badian, Philippines'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Photo by Ruel Madelo, taken in Badian, Philippines'
 ---
 **It is easy to forget that taking some rest is essential. Somehow it is drilled into us, the wanna-be hustler types, that we must work and only take minimal rest. It seems like if you want to achieve something outstanding you must not lay your head down even on the weekends.** It looks like it when we examine [influential people's social media](https://www.thechicagoschool.edu/insight/from-the-magazine/a-virtual-life/). They sure look like they never rest, and spit out pearls of wisdom on Twitter even on weekends and late at night. What is vastly overlooked is the need to take substantial breaks from your daily tasks and long-term missions. It concerns those who are on the introverted side, like myself, even more. If for several days straight I'm deeply involved in conversations and problem solving in a collective, be it online or in-person, it is imperative for me to take a break in solitude. And even then the guilty feeling that I'm not spending my time on something practical, something that will move the needle, creeps up.
 

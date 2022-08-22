@@ -58,23 +58,6 @@ sections:
           visibility: visible
           width: 50
       -
-        handle: image_for_share
-        field:
-          mode: list
-          container: assets
-          folder: blog
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          display: 'Image for share'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          width: 50
-          max_files: 1
-      -
         handle: content
         field:
           restrict: false

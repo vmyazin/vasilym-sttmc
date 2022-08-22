@@ -5,7 +5,7 @@ title: 'Learn A Foreign Language To Feel Like A Child Again'
 description: "I'm currently immersed, once again, in learning and practicing a foreign language. I'm in Brazil, so it is Portuguese for me. My ego is trying to hold me back, but I persevere."
 image: blog/book-language-of-vasily.jpg
 image_description: 'Photo by Angie (angiegophoto.com)'
-image_for_share: blog/book-language-of-vasily.jpg
+seotamic_image: blog/book-language-of-vasily.jpg
 created_date: '2021-11-25'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -15,6 +15,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772960
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: "I'm currently immersed, once again, in learning and practicing a foreign language. I'm in Brazil, so it is Portuguese for me. My ego is trying to hold me back, but I persevere."
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: "I'm currently immersed, once again, in learning and practicing a foreign language. I'm in Brazil, so it is Portuguese for me. My ego is trying to hold me back, but I persevere."
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: "I'm currently immersed, once again, in learning and practicing a foreign language. I'm in Brazil, so it is Portuguese for me. My ego is trying to hold me back, but I persevere."
 ---
 I'm currently immersed, once again, in learning and practicing a foreign language. I'm in Brazil, so it is Portuguese for me. Every day I face the reality that I'm not fluent in this country's language, and naturally, it messes with my head.
 

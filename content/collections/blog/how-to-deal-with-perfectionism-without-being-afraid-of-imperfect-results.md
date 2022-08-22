@@ -5,7 +5,7 @@ title: 'How To Deal With Perfectionism Without Being Afraid of Imperfect Results
 description: 'The absolute worst way to deal with perfectionism is to give in to it. When we want to achieve something great we should be okay shortcomings.'
 image: blog/sand-castle.jpg
 image_description: 'Photo by Jaime Spaniol, taken in Armação dos Búzios, Brazil'
-image_for_share: blog/sand-castle.jpg
+seotamic_image: blog/sand-castle.jpg
 published: true
 created_date: '2020-09-14'
 author:
@@ -16,6 +16,17 @@ tags:
   - results
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772207
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'The absolute worst way to deal with perfectionism is to give in to it. When we want to achieve something great we should be okay shortcomings.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'The absolute worst way to deal with perfectionism is to give in to it. When we want to achieve something great we should be okay shortcomings.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'The absolute worst way to deal with perfectionism is to give in to it. When we want to achieve something great we should be okay shortcomings.'
 ---
 **Getting desired results for set goals is incredibly important. After all, when we get fired up by an idea and set it in motion, we want to achieve something that in the end will resemble what we had in mind.**
 

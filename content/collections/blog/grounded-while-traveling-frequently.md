@@ -5,7 +5,7 @@ title: 'How I Keep Grounded While Traveling Frequently'
 description: 'Moving around and constantly readjusting to new environments is not normal for most people. Being nomadic – part- or full-time – takes some effort to start enjoying. Here are my insights about that.'
 image: blog/cozy-room.jpg
 image_description: 'Photo by pixabay.com'
-image_for_share: blog/cozy-room.jpg
+seotamic_image: blog/cozy-room.jpg
 created_date: '2020-09-07'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660773116
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Moving around and constantly readjusting to new environments is not normal for most people. Being nomadic – part- or full-time – takes some effort to start enjoying. Here are my insights about that.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Moving around and constantly readjusting to new environments is not normal for most people. Being nomadic – part- or full-time – takes some effort to start enjoying. Here are my insights about that.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Moving around and constantly readjusting to new environments is not normal for most people. Being nomadic – part- or full-time – takes some effort to start enjoying. Here are my insights about that.'
 ---
 **Those who know me personally are familiar with my insatiable appetite for traveling. Be it around the current locale, a next city over or long-distance international travel – I love to traverse the globe. It wasn’t innate in me to be comfortable with not knowing what exactly to expect on the other side. To set the stage for you: I typically travel alone, that’s my favorite way so far. The points I share below are made with the solo traveler in mind but can be applied to couples and groups of tight friends as well.**
 

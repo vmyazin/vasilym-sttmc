@@ -6,7 +6,7 @@ title: 'How To Convert Exercise Into A Manifestation Of Achievement'
 description: 'Years ago I had an epiphany. I realized that I can connect performing an enduring physical exercise to an unrelated goal in my mind.'
 image: blog/running-man.jpg
 image_description: 'Photo by Jenny Hill on Unsplash'
-image_for_share: blog/running-man-share.jpg
+seotamic_image: blog/running-man-share.jpg
 created_date: '2020-10-13'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -17,6 +17,17 @@ tags:
   - goals
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772151
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Years ago I had an epiphany. I realized that I can connect performing an enduring physical exercise to an unrelated goal in my mind.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Years ago I had an epiphany. I realized that I can connect performing an enduring physical exercise to an unrelated goal in my mind.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Years ago I had an epiphany. I realized that I can connect performing an enduring physical exercise to an unrelated goal in my mind.'
 ---
 **Years ago I had an epiphany. I realized that I can connect performing an enduring physical exercise (running, weight training, taking a hot sauna) to a goal fixed in my mind. I pick the most pertinent goal of the current stage of life and imagine that focusing on the exercise is a rehearsal for achieving the goal.**
 

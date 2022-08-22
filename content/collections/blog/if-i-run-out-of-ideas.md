@@ -5,7 +5,7 @@ title: "When You Run Out Of Ideas (Here's What To Do)"
 description: 'I run of ideas regularly. Sometimes it bothers me greatly. At the risk of getting super-meta, I smash through my block by writing an article on what to do when you’re stuck blank-minded.'
 image: blog/out-of-ideas.jpg
 image_description: 'Photo by Dimka.com'
-image_for_share: blog/out-of-ideas-share.jpg
+seotamic_image: blog/out-of-ideas-share.jpg
 created_date: '2021-09-27'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -14,8 +14,19 @@ tags:
   - inspiration
   - writers-block
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
-updated_at: 1660773021
+updated_at: 1661205455
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'I run of ideas regularly. Sometimes it bothers me greatly. At the risk of getting super-meta, I smash through my block by writing an article on what to do when you’re stuck blank-minded.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'I run of ideas regularly. Sometimes it bothers me greatly. At the risk of getting super-meta, I smash through my block by writing an article on what to do when you’re stuck blank-minded.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'I run of ideas regularly. Sometimes it bothers me greatly. At the risk of getting super-meta, I smash through my block by writing an article on what to do when you’re stuck blank-minded.'
 ---
 **I’ve been reluctant to write and post on my blog. It’s been a lull, a writer’s block (if this block phenomenon is even real.) I felt like I ran out of ideas. Have you ever felt this way? It’s a silly question, I know. Everybody feels this way from time to time. Well, that state of being stuck in a creative rut keeps on bothering me. Reflexively.**
 

@@ -4,7 +4,7 @@ blueprint: blog
 title: 'Skipping A Meal Brings You Closer To Your Ancestors'
 description: 'I used to be extremely rigid with eating three meals a day, plus an occasional snack. Then I evolved to be more like my ancient ancestors.'
 image: blog/orangutan-hotdog.jpg
-image_for_share: blog/orangutan-hotdog.jpg
+seotamic_image: blog/orangutan-hotdog.jpg
 created_date: '2020-08-22'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -16,6 +16,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772913
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Skipping A Meal Brings You Closer To Your Ancestors'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Skipping A Meal Brings You Closer To Your Ancestors'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Skipping A Meal Brings You Closer To Your Ancestors'
 ---
 **I had a discussion with some friends about having regular meals. I used to be extremely rigid with eating three meals a day, plus an occasional snack. “Breakfast is the most important meal of the day,” some people believe. Lunch is a vital divider of the day – for certain nations it’s the reason to have a siesta, usually after a carb-heavy intake. Dinner is a sacred ritual, some like to have it around 5pm, others wait until it’s dark outside. Regardless of what eating schedule you follow I’ve got a surprising fact for you: an obligation to gobble up a hefty portion of proteins and carbs is often an illusion.**
 

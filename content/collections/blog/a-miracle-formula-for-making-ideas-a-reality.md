@@ -5,7 +5,7 @@ title: 'A Miracle Formula For Making Ideas A Reality (For You And Your Friends)'
 description: 'Being proactive and jotting down your ideas will help you materialize them. I do it for myself and encourage others to use this simple trick.'
 image: blog/note-taking.jpg
 image_description: 'Photo by Judit Peter'
-image_for_share: blog/note-taking.jpg
+seotamic_image: blog/note-taking.jpg
 published: true
 created_date: '2020-09-27'
 author:
@@ -17,6 +17,17 @@ tags:
   - hustle
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660773143
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Being proactive and jotting down your ideas will help you materialize them. I do it for myself and encourage others to use this simple trick.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Being proactive and jotting down your ideas will help you materialize them. I do it for myself and encourage others to use this simple trick.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Being proactive and jotting down your ideas will help you materialize them. I do it for myself and encourage others to use this simple trick.'
 ---
 **I’ve developed a habit. Whenever I have an impulse to do something, I make the smallest first step to start making it a reality. For example, I have an idea for a blog post, I create a new document Google Docs and start typing something. I tell myself: I just need to get an idea out on the screen, just an outline and then I can close the laptop and go on with my day. As conventional wisdom goes, where there's 30 words, there’s a hundred and it goes on.**
 

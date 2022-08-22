@@ -4,7 +4,7 @@ blueprint: blog
 title: 'How I Stay Productive With My To-Do Lists'
 description: 'In this post I share my ways to keep organized and get stuff done'
 image: blog/watch-postits.jpg
-image_for_share: blog/watch-postits.jpg
+seotamic_image: blog/watch-postits.jpg
 published: true
 created_date: '2020-08-15'
 author:
@@ -15,6 +15,17 @@ tags:
   - systems
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660772066
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'In this post I share my ways to keep organized and get stuff done'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'In this post I share my ways to keep organized and get stuff done'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'In this post I share my ways to keep organized and get stuff done'
 ---
 **Trusting your own memory to keep you organized and on top of things is foolish. It may be a matter of pride: “look at me, I can juggle all of these things in my head, I take hold of whatever comes my way and I deal with it.” I still catch myself thinking this way. But I know better. I have ways to keep myself organized and get stuff done. I’ll admit before going further that my ways are pretty rudimentary and can surely be optimized, yet here I am, sharing what I know and what works for me.**
 

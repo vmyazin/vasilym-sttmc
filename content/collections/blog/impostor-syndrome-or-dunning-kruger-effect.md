@@ -5,7 +5,7 @@ title: 'How To Overcome Impostor Syndrome (And Not Get Caught Up In Dunning-Krug
 description: 'Low self-awareness leads to complications in life. There are fancy scientific terms to describe common states of being that trick you into thinking too highly or too lowly of yourself. Let’s break it all down.'
 image: blog/dunning-impostor.jpg
 image_description: 'Photos by Andrea Piacquadio and Nathan Cowley, found on Pexels'
-image_for_share: blog/dunning-impostor-share.jpg
+seotamic_image: blog/dunning-impostor-share.jpg
 created_date: '2020-11-17'
 author:
   - e0192008-e6b3-43ae-857d-4901cef1ed43
@@ -15,6 +15,17 @@ tags:
 updated_by: e0192008-e6b3-43ae-857d-4901cef1ed43
 updated_at: 1660773009
 published: true
+seotamic_title: title
+seotamic_title_prepend: true
+seotamic_title_append: true
+seotamic_meta_description: custom
+seotamic_custom_meta_description: 'Low self-awareness leads to complications in life. There are fancy scientific terms to describe common states of being that trick you into thinking too highly or too lowly of yourself. Let’s break it all down.'
+seotamic_open_graph_title: title
+seotamic_open_graph_description: custom
+seotamic_custom_open_graph_description: 'Low self-awareness leads to complications in life. There are fancy scientific terms to describe common states of being that trick you into thinking too highly or too lowly of yourself. Let’s break it all down.'
+seotamic_twitter_title: title
+seotamic_twitter_description: custom
+seotamic_custom_twitter_description: 'Low self-awareness leads to complications in life. There are fancy scientific terms to describe common states of being that trick you into thinking too highly or too lowly of yourself. Let’s break it all down.'
 ---
 ### The Two Opposing Psychological States
 
