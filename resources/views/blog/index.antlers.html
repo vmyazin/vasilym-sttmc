@@ -17,14 +17,14 @@
             <ul class="article-list list-unstyled plain-list mb-5">
                 {{ collection:blog as="articles"}}
 
-                    {{ articles sort="created_date:desc" }}
+                    {{ articles sort="date:desc" }}
                         <li>
                           <a class="d-flex" href="/blog/{{ slug }}">
                             <section class="img-frame">
                               <img class="img-fluid rounded" src="{{image}}" alt="{{image_description}}">
                             </section>
                             <section class="ms-4">
-                              <small class="text-nowrap meta">{{ created_date }}</small>
+                              <small class="text-nowrap meta">{{ date }}</small>
                               <h3>{{ title | widont }}</h3>
                               <div class="tags-horizontal mt-2">
                                 {{ tags }}
