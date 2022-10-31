@@ -46,6 +46,7 @@ jobs:
           passphrase:       ${{ secrets.PASSPHRASE }}
           target:           ${{ secrets.TARGET }}
           source:           ${{ github.workspace }}
+          tar_tmp_path:     ~/tmp
           overwrite:        true
           strip_components: 2
           
