@@ -60,10 +60,13 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd ${{ secrets.TARGET }}
+            sudo chown -R ${{ secrets.USERNAME }}:www-data .
+            sudo find . -type f -exec chmod 664 {} \;   
+            sudo find . -type d -exec chmod 775 {} \;
+            sudo find . -type d -exec chmod g+s {} \;
+            sudo chgrp -R www-data storage bootstrap/cache 
+            sudo chmod -R ug+rwx storage bootstrap/cache
             composer update
             php artisan cache:clear
-            sudo chmod -R 2777 storage
-            sudo chmod -R 2777 vendor
-            sudo chgrp -R www-data .
             composer dump-autoload
             sudo service nginx reload
