@@ -1,0 +1,50 @@
+#########################################
+#########################################
+
+## RPECK 31/10/2022 - Statamic Push    ##
+
+#########################################
+#########################################
+
+## Name ##
+name: Push Statamic To Production Server
+
+## Triggers ##
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 
+
+# Jobs
+jobs:
+
+  # Push
+  push:
+  
+    # Name
+    name: Push with SCP
+  
+    # OS
+    runs-on: ubuntu-latest
+    
+    # Steps
+    steps:
+    
+      # Checkout Repo
+      - uses: actions/checkout@v3
+      
+      # Upload SCP
+      - name: Copy Files Via SSH
+        uses: appleboy/scp-action@master
+        with:
+          host:             ${{ secrets.HOST }}
+          username:         ${{ secrets.USERNAME }}
+          port:             ${{ secrets.PORT }}
+          key:              ${{ secrets.KEY }}
+          passphrase:       ${{ secrets.PASSPHRASE }}
+          target:           ${{ secrets.TARGET }}
+          source:           ${{ github.workspace }}
+          overwrite:        true
+          strip_components: 2
