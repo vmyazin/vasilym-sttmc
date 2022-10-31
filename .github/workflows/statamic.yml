@@ -12,7 +12,7 @@ name: Push Statamic To Production Server
 ## Triggers ##
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
