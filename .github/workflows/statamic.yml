@@ -44,7 +44,7 @@ jobs:
           port:             ${{ secrets.PORT }}
           key:              ${{ secrets.KEY }}
           passphrase:       ${{ secrets.PASSPHRASE }}
-          target:           ${{ secrets.TARGET }}
+          target:           "${{ secrets.TARGET }},!.git,!.github,!.git*"
           source:           ${{ github.workspace }}
           overwrite:        true
           strip_components: 2
