@@ -62,8 +62,8 @@ jobs:
             cd ${{ secrets.TARGET }}
             composer update
             php artisan cache:clear
-            sudo chmod -R 777 storage
-            sudo chmod -R 777 vendor
-            composer dump-autoload
+            sudo chmod -R 2777 storage
+            sudo chmod -R 2777 vendor
             sudo chgrp -R www-data .
+            composer dump-autoload
             sudo service nginx reload
