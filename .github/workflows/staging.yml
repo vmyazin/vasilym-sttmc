@@ -35,6 +35,29 @@ jobs:
       # Checkout Repo
       - uses: actions/checkout@v3
       
+      # Composer
+      - name: Composer
+        uses: php-actions/composer@master
+        with:
+          dev: no
+          args: --profile --ignore-platform-reqs
+      
+      # NPM
+      - name: NPM
+        uses: actions/setup-node@v3
+      - run: |
+          npm install
+          npm run production --if-present
+          
+      # Remove .git
+      - name: Remove Junk
+        run: |
+          rm -Rf .git*
+          rm -Rf docker*
+          rm -Rf DOCKER*
+          rm -Rf *.log
+          rm -Rf .env*
+      
       # Upload SCP
       - name: Copy Files Via SCP
         uses: appleboy/scp-action@master
@@ -54,22 +77,17 @@ jobs:
       - name: Reload NGinx
         uses: appleboy/ssh-action@master
         with:
-          host:       ${{ secrets.HOST }}
-          username:   ${{ secrets.USERNAME }}
-          port:       ${{ secrets.PORT }}
-          key:        ${{ secrets.KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          host:        ${{ secrets.HOST }}
+          username:    ${{ secrets.USERNAME }}
+          port:        ${{ secrets.PORT }}
+          key:         ${{ secrets.KEY }}
+          passphrase:  ${{ secrets.PASSPHRASE }}
+          script_stop: true
           script: |
-            cd ${{ secrets.TARGET }}
-            composer update
-            sudo npm install
-            sudo npm run production
+            cd ${{ secrets.TARGET_STAGING }}
             sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 775 {} \;
             sudo find . -type d -exec chmod g+s {} \;
-            sudo chgrp -R www-data storage bootstrap/cache 
             sudo chmod -R ug+rwx storage bootstrap/cache
-            php artisan cache:clear
-            composer dump-autoload
             sudo service nginx reload
