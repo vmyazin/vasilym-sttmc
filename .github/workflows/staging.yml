@@ -62,8 +62,6 @@ jobs:
           script: |
             cd ${{ secrets.TARGET }}
             composer update
-            npm install
-            npm run production
             sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 775 {} \;
@@ -72,4 +70,6 @@ jobs:
             sudo chmod -R ug+rwx storage bootstrap/cache
             php artisan cache:clear
             composer dump-autoload
+            npm install
+            npm run production
             sudo service nginx reload
