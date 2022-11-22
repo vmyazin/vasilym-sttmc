@@ -96,7 +96,7 @@ jobs:
             if ! test -f ".env"; then
                 echo "Updating .env"
                 touch .env
-                cat $FILE >> .env
+                cat "APP_KEY=" >> .env
                 php artisan key:generate
                 php artisan config:cache
             fi
@@ -105,5 +105,3 @@ jobs:
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+rwx storage bootstrap/cache
             php please stache:clear
-        env:
-          FILE: ${{ secrets.ENV_FILE }}
