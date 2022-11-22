@@ -75,7 +75,7 @@ jobs:
           passphrase:  ${{ secrets.PASSPHRASE }}
           script: |
             if [ -d "$TARGET" ]; then
-              sudo chmod 755 -R $TARGET
+              sudo chmod 755 -Rf $TARGET
             fi
         env:
           TARGET: ${{ secrets.TARGET }}
