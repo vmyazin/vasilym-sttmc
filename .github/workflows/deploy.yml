@@ -7,12 +7,12 @@
 #########################################
 
 ## Name ##
-name: Push Statamic To Production Server
+name: Push Statamic To Production & Staging
 
 ## Triggers ##
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "staging"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
@@ -32,25 +32,30 @@ jobs:
     # Steps
     steps:
     
+      # Target (Production)
+      - name: Set Target (Default)
+        run: |
+          echo "target=${{ secrets.TARGET }}" >> $GITHUB_ENV
+          
+      # Target (Staging)
+      - name: Set Target (Staging)
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          echo "target=${{ secrets.TARGET_STAGING }}" >> $GITHUB_ENV
+    
       # Checkout Repo
       - uses: actions/checkout@v3
-    
-      # Cache
-      - name: 🧯 Composer Dependency Cache
-        uses: actions/cache@v3
-        with:
-          path: /tmp/composer-cache
-          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
       
       # Composer
       - name: Composer
         uses: php-actions/composer@master
+        with:
+          dev: no
+          args: --profile --ignore-platform-reqs
       
       # NPM
       - name: NPM
         uses: actions/setup-node@v3
-        with:
-          cache: npm
       - run: |
           npm install
           npm run production --if-present
@@ -63,19 +68,6 @@ jobs:
           rm -Rf DOCKER*
           rm -Rf *.log
           rm -Rf .env*
-          
-      # Chmod the folder so it can be removed
-      - name: CHMod
-        uses: appleboy/ssh-action@master
-        with:
-          host:        ${{ secrets.HOST }}
-          username:    ${{ secrets.USERNAME }}
-          port:        ${{ secrets.PORT }}
-          key:         ${{ secrets.KEY }}
-          passphrase:  ${{ secrets.PASSPHRASE }}
-          script:      sudo rm -Rf ${{ env.target }}
-        env:
-          target: ${{ secrets.TARGET }}
       
       # Upload SCP
       - name: Copy Files Via SCP
@@ -86,10 +78,10 @@ jobs:
           port:             ${{ secrets.PORT }}
           key:              ${{ secrets.KEY }}
           passphrase:       ${{ secrets.PASSPHRASE }}
-          target:           ${{ secrets.TARGET }}
+          target:           ${{ env.target }}
           source:           ${{ github.workspace }}
           tar_tmp_path:     ~/tmp
-          rm:               true
+          overwrite:        true
           strip_components: 2
           
       # Reload NGinx
@@ -103,17 +95,10 @@ jobs:
           passphrase:  ${{ secrets.PASSPHRASE }}
           script_stop: true
           script: |
-            sudo chown -R www-data:www-data ${{ secrets.TARGET }}
-            cd ${{ secrets.TARGET }}
-            if ! test -f ".env"; then
-                echo "Updating .env"
-                touch .env
-                echo "APP_KEY=" >> .env
-                sudo php artisan key:generate
-                sudo php artisan config:cache
-            fi
+            cd ${{ env.TARGET }}
+            sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+rwx storage bootstrap/cache
-            php please stache:clear
+            sudo service nginx reload
