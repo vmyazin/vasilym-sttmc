@@ -73,9 +73,9 @@ jobs:
           port:        ${{ secrets.PORT }}
           key:         ${{ secrets.KEY }}
           passphrase:  ${{ secrets.PASSPHRASE }}
-          script:      sudo rm -Rf ~/vhosts/vasilym.com
+          script:      sudo rm -Rf ${{ env.target }}
         env:
-          TARGET: ${{ secrets.TARGET }}
+          target: ${{ secrets.TARGET }}
       
       # Upload SCP
       - name: Copy Files Via SCP
