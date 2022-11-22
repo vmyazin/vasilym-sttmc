@@ -114,8 +114,8 @@ jobs:
               sudo php artisan key:generate
               sudo php artisan config:cache
             fi
+            sudo php please stache:clear
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+rwx storage bootstrap/cache vendor
-            sudo php please stache:clear
