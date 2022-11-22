@@ -76,6 +76,7 @@ jobs:
           target:           ${{ secrets.TARGET }}
           source:           ${{ github.workspace }}
           tar_tmp_path:     ~/tmp
+          rm:               true
           overwrite:        true
           strip_components: 2
           
