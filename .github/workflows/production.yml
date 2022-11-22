@@ -73,7 +73,10 @@ jobs:
           port:        ${{ secrets.PORT }}
           key:         ${{ secrets.KEY }}
           passphrase:  ${{ secrets.PASSPHRASE }}
-          script: sudo chmod 755 -R ${{ secrets.TARGET }}
+          script: |
+            if [ -d "${{ secrets.TARGET }}" ]; then
+              sudo chmod 755 -R ${{ secrets.TARGET }}
+            fi
       
       # Upload SCP
       - name: Copy Files Via SCP
