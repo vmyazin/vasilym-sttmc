@@ -63,6 +63,18 @@ jobs:
           rm -Rf DOCKER*
           rm -Rf *.log
           rm -Rf .env*
+          
+      # Chmod the folder so it can be removed
+      - name: CHMod
+        uses: appleboy/ssh-action@master
+        with:
+          host:        ${{ secrets.HOST }}
+          username:    ${{ secrets.USERNAME }}
+          port:        ${{ secrets.PORT }}
+          key:         ${{ secrets.KEY }}
+          passphrase:  ${{ secrets.PASSPHRASE }}
+          script_stop: true
+          script: sudo chmod 755 -Rf ${{ secrets.TARGET }}
       
       # Upload SCP
       - name: Copy Files Via SCP
@@ -77,7 +89,6 @@ jobs:
           source:           ${{ github.workspace }}
           tar_tmp_path:     ~/tmp
           rm:               true
-          overwrite:        true
           strip_components: 2
           
       # Reload NGinx
