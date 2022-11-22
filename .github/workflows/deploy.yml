@@ -95,7 +95,7 @@ jobs:
           passphrase:  ${{ secrets.PASSPHRASE }}
           script_stop: true
           script: |
-            cd ${{ env.TARGET }}
+            cd ${{ env.target }}
             sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
