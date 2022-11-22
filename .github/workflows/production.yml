@@ -34,17 +34,23 @@ jobs:
     
       # Checkout Repo
       - uses: actions/checkout@v3
+    
+      # Cache
+      - name: 🧯 Composer Dependency Cache
+        uses: actions/cache@v3
+        with:
+          path: /tmp/composer-cache
+          key: ${{ runner.os }}-${{ hashFiles('**/composer.lock') }}
       
       # Composer
       - name: Composer
         uses: php-actions/composer@master
-        with:
-          dev: no
-          args: --profile --ignore-platform-reqs
       
       # NPM
       - name: NPM
         uses: actions/setup-node@v3
+        with:
+          cache: npm
       - run: |
           npm install
           npm run production --if-present
