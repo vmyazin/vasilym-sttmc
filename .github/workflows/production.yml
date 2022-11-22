@@ -73,7 +73,7 @@ jobs:
           port:        ${{ secrets.PORT }}
           key:         ${{ secrets.KEY }}
           passphrase:  ${{ secrets.PASSPHRASE }}
-          script:      sudo rm -Rf $TARGET
+          script:      sudo rm -Rf ~/vhosts/vasilym.com
         env:
           TARGET: ${{ secrets.TARGET }}
       
