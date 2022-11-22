@@ -96,4 +96,4 @@ jobs:
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+rwx storage bootstrap/cache
-            sudo service nginx reload
+            php please stache:clear
