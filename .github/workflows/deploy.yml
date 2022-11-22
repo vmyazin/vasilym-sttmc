@@ -35,13 +35,13 @@ jobs:
       # Target (Production)
       - name: Set Target (Default)
         run: |
-          echo "target=${{ secrets.TARGET }}" >> $GITHUB_ENV
+          echo "TARGET=${{ secrets.TARGET }}" >> $GITHUB_ENV
           
       # Target (Staging)
       - name: Set Target (Staging)
         if: github.ref == 'refs/heads/staging'
         run: |
-          echo "target=${{ secrets.TARGET_STAGING }}" >> $GITHUB_ENV
+          echo "TARGET=${{ secrets.TARGET_STAGING }}" >> $GITHUB_ENV
     
       # Checkout Repo
       - uses: actions/checkout@v3
@@ -78,7 +78,7 @@ jobs:
           port:             ${{ secrets.PORT }}
           key:              ${{ secrets.KEY }}
           passphrase:       ${{ secrets.PASSPHRASE }}
-          target:           ${{ env.target }}
+          target:           ${{ secrets.TARGET }}
           source:           ${{ github.workspace }}
           tar_tmp_path:     ~/tmp
           overwrite:        true
@@ -95,7 +95,7 @@ jobs:
           passphrase:  ${{ secrets.PASSPHRASE }}
           script_stop: true
           script: |
-            cd ${{ env.target }}
+            cd ${{ env.TARGET }}
             sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
