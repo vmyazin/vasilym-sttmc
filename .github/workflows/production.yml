@@ -109,7 +109,7 @@ jobs:
             if ! test -f ".env"; then
                 echo "Updating .env"
                 touch .env
-                cat "APP_KEY=" >> .env
+                echo "APP_KEY=" >> .env
                 php artisan key:generate
                 php artisan config:cache
             fi
