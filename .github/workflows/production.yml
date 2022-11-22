@@ -93,8 +93,15 @@ jobs:
           script: |
             sudo chown -R www-data:www-data ${{ secrets.TARGET }}
             cd ${{ secrets.TARGET }}
+            if ! test -f ".env"; then
+                echo "Updating .env"
+                touch .env
+                cat $FILE >> .env
+            fi
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+rwx storage bootstrap/cache
             php please stache:clear
+        env:
+          FILE: ${{ secrets.ENV_FILE }}
