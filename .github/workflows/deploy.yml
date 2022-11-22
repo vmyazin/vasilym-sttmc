@@ -96,6 +96,12 @@ jobs:
           script_stop: true
           script: |
             cd ${{ env.TARGET }}
+            if ! test -f ".env"; then
+              touch .env
+              echo "APP_KEY=" >> .env
+              sudo php artisan key:generate
+              sudo php artisan config:cache
+            fi
             sudo chown -R ${{ secrets.USERNAME }}:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
