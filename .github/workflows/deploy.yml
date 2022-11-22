@@ -102,9 +102,9 @@ jobs:
               sudo php artisan key:generate
               sudo php artisan config:cache
             fi
-            sudo chown -R ${{ secrets.USERNAME }}:www-data .
+            sudo chown -R www-data:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
-            sudo chmod -R ug+rwx storage bootstrap/cache
-            sudo service nginx reload
+            sudo chmod -R ug+rwx storage bootstrap/cache vendor
+            sudo php please stache:clear
