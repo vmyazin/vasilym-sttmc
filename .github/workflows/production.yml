@@ -73,10 +73,7 @@ jobs:
           port:        ${{ secrets.PORT }}
           key:         ${{ secrets.KEY }}
           passphrase:  ${{ secrets.PASSPHRASE }}
-          script: |
-            if [ -d "$TARGET" ]; then
-              sudo chmod 755 -Rf $TARGET
-            fi
+          script:      sudo rm -Rf $TARGET
         env:
           TARGET: ${{ secrets.TARGET }}
       
@@ -109,11 +106,11 @@ jobs:
             sudo chown -R www-data:www-data ${{ secrets.TARGET }}
             cd ${{ secrets.TARGET }}
             if ! test -f ".env"; then
-                echo "Updating .env"
-                touch .env
-                echo "APP_KEY=" >> .env
-                php artisan key:generate
-                php artisan config:cache
+                echo "Updating .env";
+                touch .env;
+                echo "APP_KEY=" >> .env;
+                php artisan key:generate;
+                php artisan config:cache;
             fi
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
