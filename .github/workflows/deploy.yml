@@ -78,7 +78,7 @@ jobs:
           port:             ${{ secrets.PORT }}
           key:              ${{ secrets.KEY }}
           passphrase:       ${{ secrets.PASSPHRASE }}
-          target:           ${{ secrets.TARGET }}
+          target:           ${{ env.TARGET }}
           source:           ${{ github.workspace }}
           tar_tmp_path:     ~/tmp
           overwrite:        true
