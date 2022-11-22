@@ -92,7 +92,7 @@ jobs:
           script_stop: true
           script: |
             cd ${{ secrets.TARGET }}
-            sudo chown -R www-data:www-data .
+            sudo chown -R $USER:www-data .
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
