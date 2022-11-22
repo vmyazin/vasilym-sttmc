@@ -105,7 +105,9 @@ jobs:
           script_stop: true
           script: |
             sudo chown -R www-data:www-data ${{ env.TARGET }}
+            sudo chmod 2775 ${{ env.TARGET }}
             cd ${{ env.TARGET }}
+            pwd
             if ! test -f ".env"; then
               touch .env
               echo "APP_KEY=" >> .env
