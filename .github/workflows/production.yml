@@ -74,7 +74,7 @@ jobs:
           key:         ${{ secrets.KEY }}
           passphrase:  ${{ secrets.PASSPHRASE }}
           script_stop: true
-          script: sudo chmod 755 -Rf ${{ secrets.TARGET }}
+          script: sudo chmod 755 -R ${{ secrets.TARGET }}
       
       # Upload SCP
       - name: Copy Files Via SCP
