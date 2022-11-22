@@ -97,6 +97,8 @@ jobs:
                 echo "Updating .env"
                 touch .env
                 cat $FILE >> .env
+                php artisan key:generate
+                php artisan config:cache
             fi
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
