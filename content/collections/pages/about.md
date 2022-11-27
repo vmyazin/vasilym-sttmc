@@ -16,4 +16,4 @@ seotamic_open_graph_description: general
 seotamic_twitter_title: title
 seotamic_twitter_description: general
 ---
-Who is Vasily Simon and what has he done so far, and what he’s doing now
+Vasily Simon: Who he is, how he got here, and what he's doing now
