@@ -12,7 +12,7 @@ name: Statamic (Production)
 ## Triggers ##
 on:
   push:
-    branches: ["deploy-test"]
+    branches: ["master", "staging", "test"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
@@ -24,7 +24,7 @@ jobs:
   push:
   
     # Name
-    name: Push with SCP
+    name: Push To Server
   
     # OS
     runs-on: ubuntu-latest
