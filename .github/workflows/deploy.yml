@@ -7,12 +7,12 @@
 #########################################
 
 ## Name ##
-name: Push Statamic To Production & Staging
+name: Statamic (Production)
 
 ## Triggers ##
 on:
   push:
-    branches: ["master", "staging"]
+    branches: ["deploy-test"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch: 
@@ -29,6 +29,10 @@ jobs:
     # OS
     runs-on: ubuntu-latest
     
+    # ENV Vars
+    env:
+     BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
+    
     # Steps
     steps:
     
@@ -42,58 +46,8 @@ jobs:
         if: github.ref == 'refs/heads/staging'
         run: |
           echo "TARGET=${{ secrets.TARGET_STAGING }}" >> $GITHUB_ENV
-    
-      # Checkout Repo
-      - uses: actions/checkout@v3
-      
-      # Composer
-      - name: Composer
-        uses: php-actions/composer@master
-      
-      # NPM
-      - name: NPM
-        uses: actions/setup-node@v3
-      - run: |
-          npm install
-          npm run production --if-present
           
-      # Remove .git
-      - name: Remove Junk
-        run: |
-          rm -Rf .git*
-          rm -Rf docker*
-          rm -Rf DOCKER*
-          rm -Rf *.log
-          rm -Rf .env*
-          
-      # Remove Directory
-      - name: Remove Directory
-        uses: appleboy/ssh-action@master
-        with:
-          host:        ${{ secrets.HOST }}
-          username:    ${{ secrets.USERNAME }}
-          port:        ${{ secrets.PORT }}
-          key:         ${{ secrets.KEY }}
-          passphrase:  ${{ secrets.PASSPHRASE }}
-          script_stop: true
-          script: sudo rm -Rf ${{ env.TARGET }}
-          
-      # Upload SCP
-      - name: Copy Files Via SCP
-        uses: appleboy/scp-action@master
-        with:
-          host:             ${{ secrets.HOST }}
-          username:         ${{ secrets.USERNAME }}
-          port:             ${{ secrets.PORT }}
-          key:              ${{ secrets.KEY }}
-          passphrase:       ${{ secrets.PASSPHRASE }}
-          target:           ${{ env.TARGET }}
-          source:           ${{ github.workspace }}
-          tar_tmp_path:     ~/tmp
-          overwrite:        true
-          strip_components: 2
-          
-      # Reload NGinx
+      # Run GIT on server
       - name: Reload NGinx
         uses: appleboy/ssh-action@master
         with:
@@ -104,18 +58,47 @@ jobs:
           passphrase:  ${{ secrets.PASSPHRASE }}
           script_stop: true
           script: |
-            sudo chown -R www-data:www-data ${{ env.TARGET }}
-            sudo chmod 2775 ${{ env.TARGET }}
+            sudo chown -R $USER:www-data ${{ env.TARGET }}
+            sudo chmod -R g+swrx ${{ env.TARGET }}
             cd ${{ env.TARGET }}
-            pwd
+            sudo rm -Rf node_modules vendor
+            
+            git init
+            
+            if ! git config remote.origin.url >/dev/null; then
+              git remote add origin https://github.com/richpeck/vasilym-sttmc.git
+            fi
+            
+            git fetch
+            
+            if ! git show-ref -q --heads ${{ env.BRANCH_NAME }}; then
+              git checkout --track origin/${{ env.BRANCH_NAME }}
+            fi
+            
+            git reset HEAD
+            
             if ! test -f ".env"; then
               touch .env
               echo "APP_KEY=" >> .env
-              sudo php artisan key:generate
-              sudo php artisan config:cache
+              echo "STATAMIC_GIT_ENABLED=true" >> .env
+              echo "STATAMIC_GIT_PUSH=true" >> .env
+              echo "STATAMIC_GIT_AUTOMATIC=true" >> .env
+              echo "STATAMIC_GIT_USERNAME='Vasily Myazin (Statamic)'" >> .env
+              echo "STATAMIC_GIT_EMAIL=vm@konspiredesign.com" >> .env
+              echo "STATAMIC_LICENSE_KEY=q1v2z7podg5r4l0x" >> .env
             fi
-            sudo php please stache:clear
+            
+            composer install
+            npm install
+            npm run prod
+            
+            php artisan key:generate
+            
+            php please stache:clear
+            php artisan config:clear
+            
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
-            sudo chmod -R ug+rwx storage bootstrap/cache vendor
+            sudo chmod -R ug+rwx storage bootstrap/cache
+            sudo chmod -R g+swrx ${{ env.TARGET }}
