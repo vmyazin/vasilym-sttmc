@@ -61,8 +61,6 @@ jobs:
             sudo chown -R $USER:www-data ${{ env.TARGET }}
             sudo chmod -R g+swrx ${{ env.TARGET }}
             cd ${{ env.TARGET }}
-            sudo chmod -R ug+srwx storage bootstrap/cache
-            sudo chmod -R g+swrx ${{ env.TARGET }}
             sudo rm -Rf node_modules vendor
             
             git init
@@ -101,11 +99,11 @@ jobs:
             
             php artisan key:generate
             
-            php please stache:clear
-            php artisan config:clear
-            
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
             sudo chmod -R ug+srwx storage bootstrap/cache
             sudo chmod -R g+swrx ${{ env.TARGET }}
+            
+            php please stache:clear
+            php artisan config:clear
