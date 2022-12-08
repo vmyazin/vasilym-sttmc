@@ -80,7 +80,7 @@ jobs:
             fi
             
             git checkout ${{ env.BRANCH_NAME }}
-            git reset HEAD
+            git reset HEAD --hard
             
             if ! test -f ".env"; then
               touch .env
