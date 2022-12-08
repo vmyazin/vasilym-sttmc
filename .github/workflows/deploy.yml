@@ -61,6 +61,8 @@ jobs:
             sudo chown -R $USER:www-data ${{ env.TARGET }}
             sudo chmod -R g+swrx ${{ env.TARGET }}
             cd ${{ env.TARGET }}
+            sudo chmod -R ug+srwx storage bootstrap/cache
+            sudo chmod -R g+swrx ${{ env.TARGET }}
             sudo rm -Rf node_modules vendor
             
             git init
