@@ -66,15 +66,20 @@ jobs:
             git init
             
             if ! git config remote.origin.url >/dev/null; then
-              git remote add origin https://github.com/richpeck/vasilym-sttmc.git
+              git remote add origin git@github.com:${{ github.repository }}.git
+            fi
+            
+            if git config remote.origin.url >/dev/null; then
+              git remote set-url origin git@github.com:${{ github.repository }}.git
             fi
             
             git fetch
             
             if ! git show-ref -q --heads ${{ env.BRANCH_NAME }}; then
-              git checkout --track origin/${{ env.BRANCH_NAME }}
+              git branch --track ${{ env.BRANCH_NAME }} origin/${{ env.BRANCH_NAME }}
             fi
             
+            git checkout ${{ env.BRANCH_NAME }}
             git reset HEAD
             
             if ! test -f ".env"; then
@@ -100,5 +105,5 @@ jobs:
             sudo find . -type f -exec chmod 664 {} \;   
             sudo find . -type d -exec chmod 755 {} \;
             sudo find . -type d -exec chmod g+s {} \;
-            sudo chmod -R ug+rwx storage bootstrap/cache
+            sudo chmod -R ug+srwx storage bootstrap/cache
             sudo chmod -R g+swrx ${{ env.TARGET }}
