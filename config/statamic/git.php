@@ -30,7 +30,7 @@ return [
     */
 
     // 'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
-    'automatic' => false,
+    'automatic' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'use_authenticated' => true,
+    'use_authenticated' => false,
 
     'user' => [
         'name' => env('STATAMIC_GIT_USER_NAME', 'Vasily Myazin (Statamic)'),
@@ -142,7 +142,7 @@ return [
     |
     */
 
-    'push' => env('STATAMIC_GIT_PUSH', false),
+    'push' => env('STATAMIC_GIT_PUSH', true),
 
     /*
     |--------------------------------------------------------------------------
