@@ -15,8 +15,8 @@ return [
     |
     */
 
-    // 'enabled' => env('STATAMIC_GIT_ENABLED', false),
-    'enabled' => true,
+    'enabled' => env('STATAMIC_GIT_ENABLED', false),
+    // 'enabled' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -29,8 +29,8 @@ return [
     |
     */
 
-    // 'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
-    'automatic' => true,
+    'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
+    // 'automatic' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'use_authenticated' => false,
+    'use_authenticated' => true,
 
     'user' => [
         'name' => env('STATAMIC_GIT_USER_NAME', 'Vasily Myazin (Statamic)'),
@@ -142,8 +142,7 @@ return [
     |
     */
 
-    // 'push' => env('STATAMIC_GIT_PUSH', false),
-    'push' => true,
+    'name' => env('STATAMIC_GIT_PUSH', true),
 
     /*
     |--------------------------------------------------------------------------
