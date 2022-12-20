@@ -15,8 +15,8 @@ return [
     |
     */
 
-    // 'enabled' => env('STATAMIC_GIT_ENABLED', false),
-    'enabled' => true,
+    'enabled' => env('STATAMIC_GIT_ENABLED', false),
+    // 'enabled' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -29,8 +29,8 @@ return [
     |
     */
 
-    // 'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
-    'automatic' => false,
+    'automatic' => env('STATAMIC_GIT_AUTOMATIC', true),
+    // 'automatic' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -142,7 +142,7 @@ return [
     |
     */
 
-    'push' => env('STATAMIC_GIT_PUSH', false),
+    'name' => env('STATAMIC_GIT_PUSH', true),
 
     /*
     |--------------------------------------------------------------------------
