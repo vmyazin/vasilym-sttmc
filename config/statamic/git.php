@@ -142,7 +142,7 @@ return [
     |
     */
 
-    'push' => env('STATAMIC_GIT_PUSH', true),
+    'push' => env('STATAMIC_GIT_PUSH', false),
 
     /*
     |--------------------------------------------------------------------------
