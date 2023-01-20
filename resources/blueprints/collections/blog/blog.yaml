@@ -96,7 +96,6 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
-          latest_date: '2022-08-16'
           validate:
             - required
       -
