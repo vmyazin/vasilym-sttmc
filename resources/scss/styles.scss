@@ -796,6 +796,30 @@ hr {
   }
 }
 
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: -5px;
+
+  a {
+    display: flex;
+    flex: 1;
+    margin: 5px;
+    opacity: .95;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .nav-back {
   .link-wrapper {
     font-size: $font-xl;

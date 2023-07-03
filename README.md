@@ -19,5 +19,3 @@ To compile the SCSS files into CSS, follow these steps:
 2. Run the CSS compilation command: `npm run dev`
 
 This will compile the SCSS files located in the `resources/scss` directory and output the compiled CSS to the `public/css` directory. If you want to compile the CSS for production, use the `npm run prod` command instead.
-
-Make sure to adjust the file paths and configurations according to your specific project structure and requirements.
